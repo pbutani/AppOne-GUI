@@ -1,0 +1,8 @@
+/Users/prekshabutani/Desktop/BlazorApp_Aug6/BlazorApp1/BlazorApp1/Shared/bin/Debug/netstandard2.1/BlazorApp1.Shared.deps.json
+/Users/prekshabutani/Desktop/BlazorApp_Aug6/BlazorApp1/BlazorApp1/Shared/bin/Debug/netstandard2.1/BlazorApp1.Shared.dll
+/Users/prekshabutani/Desktop/BlazorApp_Aug6/BlazorApp1/BlazorApp1/Shared/bin/Debug/netstandard2.1/BlazorApp1.Shared.pdb
+/Users/prekshabutani/Desktop/BlazorApp_Aug6/BlazorApp1/BlazorApp1/Shared/obj/Debug/netstandard2.1/BlazorApp1.Shared.csprojAssemblyReference.cache
+/Users/prekshabutani/Desktop/BlazorApp_Aug6/BlazorApp1/BlazorApp1/Shared/obj/Debug/netstandard2.1/BlazorApp1.Shared.AssemblyInfoInputs.cache
+/Users/prekshabutani/Desktop/BlazorApp_Aug6/BlazorApp1/BlazorApp1/Shared/obj/Debug/netstandard2.1/BlazorApp1.Shared.AssemblyInfo.cs
+/Users/prekshabutani/Desktop/BlazorApp_Aug6/BlazorApp1/BlazorApp1/Shared/obj/Debug/netstandard2.1/BlazorApp1.Shared.dll
+/Users/prekshabutani/Desktop/BlazorApp_Aug6/BlazorApp1/BlazorApp1/Shared/obj/Debug/netstandard2.1/BlazorApp1.Shared.pdb

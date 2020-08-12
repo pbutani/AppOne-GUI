@@ -1,0 +1,68 @@
+﻿@page "/counter"
+@inject NavigationManager NavManager
+
+@using Hl7.Fhir.Model;
+@using Hl7.Fhir.Rest
+@using System.Xml.Linq
+@using BlazorApp1.Shared
+@inject HttpClient Http
+@using System.Net
+@using Task = System.Threading.Tasks.Task
+
+
+
+<h1>Counter</h1>
+
+<p>Current count: @currentCount</p>
+
+<button class="btn btn-primary" @onclick="IncrementCount">Click me</button>
+
+<p>launchUri: @launchUri</p>
+<p>serviceUri: @serviceUri</p>
+<p>launchContextId: @launchContextId</p>
+<p>authCodeRequest: @authCodeRequest</p>
+<p>authCode: @authCode</p>
+<p>authTokenRequestString: @authTokenRequestString</p>
+<p>authTokenResponseString: @authTokenResponseString</p>
+<p>authToken: @authToken</p>
+
+<p>Patient: @Patient</p>
+
+@code {
+    private int currentCount = 0;
+    private string launchUri = "";
+    private string serviceUri = "";
+    private string launchContextId = "";
+    private string authToken = "";
+    private string authCodeRequest = "";
+    private string authTokenRequestString = "";
+    private string authTokenResponseString = "";
+    private string authCode = "";
+    private string Patient;
+
+
+    protected override async Task OnInitializedAsync()
+    {
+        currentCount++;
+
+        string[] vals = await Http.GetFromJsonAsync<string[]>("api/Values");
+        launchUri = vals[0];
+        serviceUri = vals[1];
+        launchContextId = vals[2];
+        authCodeRequest = vals[3];
+        authCode = vals[4];
+        authTokenRequestString = vals[5];
+        authTokenResponseString = vals[6];
+        authToken = vals[7];
+        Patient = vals[8];
+
+    }
+
+    private void IncrementCount()
+    {
+        currentCount++;
+    }
+
+}
+
+

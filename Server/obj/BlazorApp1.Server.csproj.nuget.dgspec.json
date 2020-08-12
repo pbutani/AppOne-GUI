@@ -1,0 +1,219 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/prekshabutani/Desktop/BlazorApp_Aug6/BlazorApp1/BlazorApp1/Server/BlazorApp1.Server.csproj": {}
+  },
+  "projects": {
+    "/Users/prekshabutani/Desktop/BlazorApp_Aug6/BlazorApp1/BlazorApp1/Client/BlazorApp1.Client.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/prekshabutani/Desktop/BlazorApp_Aug6/BlazorApp1/BlazorApp1/Client/BlazorApp1.Client.csproj",
+        "projectName": "BlazorApp1.Client",
+        "projectPath": "/Users/prekshabutani/Desktop/BlazorApp_Aug6/BlazorApp1/BlazorApp1/Client/BlazorApp1.Client.csproj",
+        "packagesPath": "/Users/prekshabutani/.nuget/packages/",
+        "outputPath": "/Users/prekshabutani/Desktop/BlazorApp_Aug6/BlazorApp1/BlazorApp1/Client/obj/",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "/Users/prekshabutani/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "projectReferences": {
+              "/Users/prekshabutani/Desktop/BlazorApp_Aug6/BlazorApp1/BlazorApp1/Shared/BlazorApp1.Shared.csproj": {
+                "projectPath": "/Users/prekshabutani/Desktop/BlazorApp_Aug6/BlazorApp1/BlazorApp1/Shared/BlazorApp1.Shared.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "dependencies": {
+            "Hl7.Fhir.R4": {
+              "target": "Package",
+              "version": "[1.8.0, )"
+            },
+            "Microsoft.AspNetCore.Components.WebAssembly": {
+              "target": "Package",
+              "version": "[3.2.0, )"
+            },
+            "Microsoft.AspNetCore.Components.WebAssembly.Build": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.2.0, )"
+            },
+            "Microsoft.AspNetCore.Components.WebAssembly.DevServer": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.2.0, )"
+            },
+            "Microsoft.AspNetCore.WebUtilities": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "System.Net.Http.Json": {
+              "target": "Package",
+              "version": "[3.2.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "NETStandard.Library": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.102/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/prekshabutani/Desktop/BlazorApp_Aug6/BlazorApp1/BlazorApp1/Server/BlazorApp1.Server.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/prekshabutani/Desktop/BlazorApp_Aug6/BlazorApp1/BlazorApp1/Server/BlazorApp1.Server.csproj",
+        "projectName": "BlazorApp1.Server",
+        "projectPath": "/Users/prekshabutani/Desktop/BlazorApp_Aug6/BlazorApp1/BlazorApp1/Server/BlazorApp1.Server.csproj",
+        "packagesPath": "/Users/prekshabutani/.nuget/packages/",
+        "outputPath": "/Users/prekshabutani/Desktop/BlazorApp_Aug6/BlazorApp1/BlazorApp1/Server/obj/",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "/Users/prekshabutani/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "/Users/prekshabutani/Desktop/BlazorApp_Aug6/BlazorApp1/BlazorApp1/Client/BlazorApp1.Client.csproj": {
+                "projectPath": "/Users/prekshabutani/Desktop/BlazorApp_Aug6/BlazorApp1/BlazorApp1/Client/BlazorApp1.Client.csproj"
+              },
+              "/Users/prekshabutani/Desktop/BlazorApp_Aug6/BlazorApp1/BlazorApp1/Shared/BlazorApp1.Shared.csproj": {
+                "projectPath": "/Users/prekshabutani/Desktop/BlazorApp_Aug6/BlazorApp1/BlazorApp1/Shared/BlazorApp1.Shared.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Hl7.Fhir.R4": {
+              "target": "Package",
+              "version": "[1.8.0, )"
+            },
+            "Microsoft.AspNetCore.Components.WebAssembly.Server": {
+              "target": "Package",
+              "version": "[3.2.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.102/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/prekshabutani/Desktop/BlazorApp_Aug6/BlazorApp1/BlazorApp1/Shared/BlazorApp1.Shared.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/prekshabutani/Desktop/BlazorApp_Aug6/BlazorApp1/BlazorApp1/Shared/BlazorApp1.Shared.csproj",
+        "projectName": "BlazorApp1.Shared",
+        "projectPath": "/Users/prekshabutani/Desktop/BlazorApp_Aug6/BlazorApp1/BlazorApp1/Shared/BlazorApp1.Shared.csproj",
+        "packagesPath": "/Users/prekshabutani/.nuget/packages/",
+        "outputPath": "/Users/prekshabutani/Desktop/BlazorApp_Aug6/BlazorApp1/BlazorApp1/Shared/obj/",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "/Users/prekshabutani/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "NETStandard.Library": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.102/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

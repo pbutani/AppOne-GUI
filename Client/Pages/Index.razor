@@ -1,0 +1,37 @@
+﻿@page "/"
+@using Microsoft.AspNetCore.WebUtilities
+@inject NavigationManager NavManager
+@inject HttpClient Http
+
+<h1>Hello, world!</h1>
+
+Welcome to your new app.
+
+<SurveyPrompt Title="How is Blazor working for you?" />
+
+
+<p>Current uri: @currentUri</p>
+
+@code {
+    
+    private string currentUri = "";
+
+    protected override async Task OnInitializedAsync()
+    {
+        var uri = NavManager.ToAbsoluteUri(NavManager.Uri);
+        currentUri = uri.ToString();
+
+        var qs = QueryHelpers.ParseQuery(uri.Query);
+        if (qs.TryGetValue("code", out var codeVal))
+        {
+            await Http.PostAsJsonAsync("api/Values", uri);
+        }
+        
+    }
+
+    private void IncrementCount()
+    {
+        //currentCount++;
+    }
+
+}

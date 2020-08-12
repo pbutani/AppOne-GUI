@@ -1,0 +1,42 @@
+@page "/launch"
+@using Microsoft.AspNetCore.WebUtilities
+@using System.Text
+@using BlazorApp1.Shared
+@using System.Diagnostics
+@inject NavigationManager NavManager
+@inject HttpClient Http
+@inject IJSRuntime jsRuntime
+
+<h1>Launch</h1>
+
+<p>Current uri: @currentUri</p>
+<p>Current uri: @authUri</p>
+
+
+@code {
+    private string currentUri = "";
+    private string authUri = "";
+
+    protected override async Task OnInitializedAsync()
+    {
+        var uri = NavManager.ToAbsoluteUri(NavManager.Uri);
+        currentUri = uri.ToString();
+        //currentUri = "http://localhost:9147/FC_App/Launch?iss=https:%2F%2Ffhir-ehr.sandboxcerner.com%2Fr4%2F0b8a0111-e8e6-4c26-a91c-5069cbc6b1ca&launch=d13ae44f-8027-45de-8b72-ae5bb4207f1c";
+
+        var qs = QueryHelpers.ParseQuery(uri.Query);
+        if (qs.TryGetValue("iss", out var codeVal))
+        {
+            await Http.PostAsJsonAsync("Launch", currentUri);
+            string[] vals = await Http.GetFromJsonAsync<string[]>("api/Values");
+            authUri = vals[3];
+            await jsRuntime.InvokeVoidAsync("open", authUri);
+        }
+        else
+        {
+            authUri = "";
+        }
+    }
+
+
+
+}
